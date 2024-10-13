@@ -1,26 +1,23 @@
+# Mobile Network Bandwidth Dataset
 
-Mobile Network Bandwidth Dataset
-
-Overview
-----------------------------------------------------------
+### Overview
 This dataset contains mobile network bandwidth traces collected from vehicular networks in Australia in 2015. The data was used in the following publication:
 
-Bokani, A., Hassan, M., Kanhere, S. S., Yao, J., & Zhong, G. (2016). Comprehensive mobile bandwidth traces from vehicular networks. In Proceedings of the 7th international conference on multimedia systems (pp. 1–6). ACM.
+**Bokani, A., Hassan, M., Kanhere, S. S., Yao, J., & Zhong, G. (2016). Comprehensive mobile bandwidth traces from vehicular networks.** In *Proceedings of the 7th international conference on multimedia systems* (pp. 1–6). ACM.
 
 The dataset consists of bandwidth measurements from both 3G and 4G networks, with detailed information such as download duration, download rate, location coordinates, and network operator details.
 
-Dataset Contents
-----------------------------------------------------------
+### Dataset Contents
 The dataset includes two files:
-1. 3G_BWData.json - Contains bandwidth traces for 3G networks.
-2. 4G_BWData.json - Contains bandwidth traces for 4G networks.
+1. **3G_BWData.json** - Contains bandwidth traces for 3G networks.
+2. **4G_BWData.json** - Contains bandwidth traces for 4G networks.
 
 Each file contains a list of results, where each entry represents a single bandwidth measurement session.
 
-File Structure
-----------------------------------------------------------
+### File Structure
 Each JSON file has the following structure:
 
+```json
 {
   "results": [
     {
@@ -44,31 +41,27 @@ Each JSON file has the following structure:
     ...
   ]
 }
+```
 
-Features
-----------------------------------------------------------
-- Location Information: Each bandwidth trace contains latitude and longitude values for the point of measurement.
-- Network Types: The networkType field indicates the type of network (e.g., 3G, 4G LTE).
-- Operator Details: Includes the mobile network operator's name and code, which can be cross-referenced with public operator lists.
-- Download Metrics: Each entry includes the download rate (dlRate in kbps), download size (dlSize in bytes), and download duration (dlDuration in seconds), providing detailed insights into network performance.
+### Features
+- **Location Information**: Each bandwidth trace contains latitude and longitude values for the point of measurement.
+- **Network Types**: The `networkType` field indicates the type of network (e.g., 3G, 4G LTE).
+- **Operator Details**: Includes the mobile network operator's name and code, which can be cross-referenced with public operator lists.
+- **Download Metrics**: Each entry includes the download rate (`dlRate` in kbps), download size (`dlSize` in bytes), and download duration (`dlDuration` in seconds), providing detailed insights into network performance.
 
-Usage
-----------------------------------------------------------
+### Usage
 Researchers can use this dataset to study:
 - Network performance in vehicular environments.
 - The variation in mobile bandwidth based on location, time, and network operator.
 - Comparative analysis of 3G and 4G network performance in Australia.
 
-----------------------------------------------------------
-Citation
-----------------------------------------------------------
+### Citation
 If you use this dataset, please cite the following paper:
 
-Bokani, A., Hassan, M., Kanhere, S. S., Yao, J., & Zhong, G. (2016). Comprehensive mobile bandwidth traces from vehicular networks. In Proceedings of the 7th international conference on multimedia systems (pp. 1–6). ACM.
+Bokani, A., Hassan, M., Kanhere, S. S., Yao, J., & Zhong, G. (2016). Comprehensive mobile bandwidth traces from vehicular networks. In *Proceedings of the 7th international conference on multimedia systems* (pp. 1–6). ACM.
 
-Contact
-----------------------------------------------------------
+### Contact
 For any queries or further information, please contact:
 
-Dr. Ayub Bokani  
+**Dr. Ayub Bokani**  
 Email: aubokani@gmail.com
